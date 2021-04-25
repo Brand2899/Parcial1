@@ -1,17 +1,18 @@
 package model;
 
 import processing.core.PApplet;
+import java.util.Date;
 
 public class Dog {
 	
 	private String name;
 	private String race;
-	private int date;
+	private Date date;
 	private int id;
 	private int age;
 	private PApplet app;
 	
-	public Dog(String name, String race, int date, int id, int age, PApplet app) {
+	public Dog(String name, String race, Date date, int id, int age, PApplet app) {
 		this.name = name;
 		this.race = race;
 		this.date = date;
@@ -36,11 +37,11 @@ public class Dog {
 		this.race = race;
 	}
 
-	public int getDate() {
+	public Date getDate() {
 		return date;
 	}
 
-	public void setDate(int date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 

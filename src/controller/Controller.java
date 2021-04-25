@@ -13,4 +13,8 @@ public class Controller {
 		this.app = app;
 		l = new Logic(app);
 	}
+	
+	public LinkedList<Dog> getDogList(){
+		return l.getDogList();
+	}
 }
