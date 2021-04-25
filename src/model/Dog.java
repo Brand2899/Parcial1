@@ -2,6 +2,7 @@ package model;
 
 import processing.core.PApplet;
 import java.util.Date;
+import java.text.SimpleDateFormat;
 
 public class Dog {
 	
@@ -69,6 +70,15 @@ public class Dog {
 		this.app = app;
 	}
 	
-	
-	
+	public void drawDog(int i) {
+		app.textSize(10);
+		app.text("ID: " + id, i, 50);
+		app.text("Name: " + name, i, 70);
+		app.text("Age: " + age, i, 90);
+		app.text("Race: "+ race, i, 110);
+		
+		SimpleDateFormat dt = new SimpleDateFormat("DD-MM-YYYY");
+		String Date = dt.format(this.date);
+		app.text("Birth Date: " + Date, i, 130);
+	}
 }

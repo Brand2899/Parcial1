@@ -24,6 +24,11 @@ public class Logic {
 		txt2 = app.loadStrings("../data/TXT2.txt");
 		
 		dogList = new LinkedList<Dog>();
+		
+		ac = new AgeCompare();
+		bdc = new BirthDateCompare();
+		nc = new NameCompare();
+		rc = new RaceCompare();
 	}
 	
 	public LinkedList<Dog> getDogList() {
