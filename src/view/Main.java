@@ -21,6 +21,11 @@ public class Main extends PApplet {
 	
 	public void draw() {
 		background(255);
+		
+		for(int i = 0; i < c.getDogList().size(); i++) {
+			c.getDogList().get(i).drawDog(50 + i);
+		}
+		
 	}
 	
 	public void keyPressed() {
