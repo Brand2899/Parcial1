@@ -12,6 +12,11 @@ public class Logic {
 	
 	private PApplet app;
 	
+	private AgeCompare ac;
+	private BirthDateCompare bdc;
+	private NameCompare nc;
+	private RaceCompare rc;
+	
 	public Logic(PApplet app) {
 		this.app = app;
 		
